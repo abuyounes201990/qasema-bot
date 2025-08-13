@@ -16,9 +16,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-if not BOT_TOKEN:
-    raise RuntimeError("Please set BOT_TOKEN env var (your Telegram bot token).")
+BOT_TOKEN = "8420817174:AAElcz5j78pco3h7-luFZAzHYBX2TRvNQsI"
 
 DEFAULT_EXPIRE_DAYS = int(os.getenv("EXPIRE_DAYS", "2"))
 storage = Storage(db_path=os.getenv("DB_PATH", "data/bot.db"), expire_days=DEFAULT_EXPIRE_DAYS)
