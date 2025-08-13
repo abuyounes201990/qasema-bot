@@ -58,7 +58,12 @@ def decode_1xbet_coupon(code: str) -> List[Tuple[str, str]]:
         f"https://www.1xbet.com/en/line/coupon/{code}",
     ]
     headers = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/115.0.0.0 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9,ar;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Connection": "keep-alive",
     }
     for url in urls:
         try:
